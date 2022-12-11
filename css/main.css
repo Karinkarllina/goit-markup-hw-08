@@ -109,7 +109,7 @@ body {
 }
 
 .site-navigation {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 50px;
 }
@@ -145,7 +145,7 @@ body {
 }
 
 .company-contact {
-  display: flex;
+  display: none;
   gap: 30px;
 }
 
@@ -161,6 +161,7 @@ body {
   padding-bottom: 32px;
   display: flex;
   align-items: center;
+  display: none;
 }
 .company-contact__link:hover, .company-contact__link:focus {
   color: var(--accent-color);
@@ -172,6 +173,93 @@ body {
 }
 .company-contact__icon:hover, .company-contact__icon:focus {
   fill: var(--accent-color);
+}
+
+.menu-open {
+  background-color: transparent;
+  border: none;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.mobile-menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  padding-bottom: 48px;
+  z-index: 1;
+}
+
+.menu-close {
+  background-color: transparent;
+  border: none;
+  justify-content: flex-end;
+  display: block;
+  margin-left: auto;
+}
+
+.mobile-container__icon {
+  padding-top: 10px;
+  padding-right: 15px;
+}
+
+.menu-navigation__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--primary-black-color);
+  text-decoration: none;
+}
+
+.menu-navigation__iteam:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu-navigation__iteam {
+  margin-bottom: 306px;
+}
+
+.menu-contact__iteam:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu-contact__iteam:last-child {
+  margin-bottom: 64px;
+}
+
+.menu-contact__link--menu {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.menu-contact__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu-social {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+.menu-social__link {
+  text-decoration: none;
+  color: var(--accent-color);
 }
 
 .footer {
