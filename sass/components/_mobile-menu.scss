@@ -1,0 +1,114 @@
+.menu-open {
+    background-color: transparent;
+    border: none;
+    justify-content: flex-end;
+    padding: 0;
+    cursor: pointer;
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    padding-bottom: 48px;
+    z-index: 1;
+    >.container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: auto;
+    }
+}
+
+.menu-close {
+    margin-top: 10px;
+    margin-right: 15px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+    &:hover {
+        fill: var(--accent-color);
+    }
+}
+
+.menu-navigation {
+    margin-left: 40px;
+}
+
+.menu-navigation__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--primary-black-color);
+    text-decoration: none;
+}
+
+.menu-navigation__iteam:not(:last-child) {
+    margin-bottom: 32px;
+
+}
+
+.menu-navigation__iteam {
+    margin-bottom: 306px;
+}
+
+.menu-contact {
+    margin-left: 40px;
+}
+
+.menu-contact__iteam:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.menu-contact__iteam:last-child {
+    margin-bottom: 64px;
+}
+
+.menu-contact__link--menu {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.menu-contact__link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu-social {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 48px;
+    margin-left: 40px;
+}
+
+.menu-social__link {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.menu-social__link::after {
+    content: '';
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+}
