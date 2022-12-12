@@ -159,6 +159,7 @@ padding-right: 15px;
     margin-bottom: 64px;
 }
 
+
 .menu-contact__link--menu {
     font-weight: 500;
     font-size: 34px;
@@ -188,4 +189,12 @@ padding-right: 15px;
 .menu-social__link {
     text-decoration: none;
     color: var(--accent-color);
+    position: relative;
 }
+
+.menu-social__link::after {
+    content: '';
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+}
+
