@@ -46,20 +46,20 @@
                     </a>
                 </li>
             </ul>
-            <button type="button" class="menu-open">
-                <svg class="menu-open" width="40" height="40" >
+            <button type="button" class="menu-open" data-menu-open>
+                <svg class="menu-open__icon" width="40" height="40" >
                     <use href="./images/icons.svg#icon-menu-open"></use>
                 </svg>
             </button>
         </div>
-        <div class="mobile-menu">
-            <div class="mobile-container">
+        <div class="mobile-menu is-hidden" data-menu>
+            <div class="container">
                 <div class="mobile-menu-top">
-                    <div class="mobile-container__icon">
-                        <svg class="menu-close" width="40" height="40">
+                    <button type="button" class="menu-close" data-menu-close>
+                        <svg class="menu-close__icon" width="40" height="40">
                             <use href="./images/icons.svg#icon-menu-close"></use>
                         </svg>
-                    </div>
+                    </button>
                     <ul class="menu-navigation list">
                         <li class="menu-navigation__iteam">
                             <a href="./index.html" class="menu-navigation__link current">Студія</a>
@@ -498,6 +498,8 @@
         </div>
     </div>
     <script src="./js/modal.js">
+    </script>
+    <script src="./js/menu.js">
     </script>
 </body>
 </html>
