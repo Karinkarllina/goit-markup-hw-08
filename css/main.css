@@ -920,7 +920,7 @@ body {
   }
 }
 
-.menu-social__link::after {
+.menu-social__iteam:not(:last-child):after {
   content: "";
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   padding-right: 10px;
