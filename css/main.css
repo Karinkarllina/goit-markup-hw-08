@@ -40,6 +40,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
