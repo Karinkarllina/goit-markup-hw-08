@@ -100,12 +100,12 @@
         </div>
     </header>
     <main>
-        <!-- <section class="hero hero__image">
+        <section class="hero hero__image">
             <div class="container hero__container">
             <h1 class="hero__title">Ефективні рішення для <br> вашого бізнесу</h1>
             <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
             </div>
-        </section> -->
+        </section>
         <section class="section feature">
             <div class="container feature__container">
             <h2 hidden>Нашиі особливості</h2>
@@ -154,19 +154,19 @@
             <h2 class="section-title">Чим ми займаємося</h2>
             <ul class="list work-list">
                 <li class="work-list__iteam">
-                    <img src="./images/desktop.jpg" alt="Десктопні додатки" width="370">
+                    <img srcset="./images/desktop.jpg 1x, ./images/desktop-2x.jpg 2x" src="./images/desktop.jpg" alt="Десктопні додатки" width="370">
                     <div class="work-list__wrap">
                         <h3 class="work-list__text">Десктопні додатки</h3>
                     </div>
                 </li>
                 <li class="work-list__iteam">
-                    <img src="./images/mobile.jpg" alt="Мобільні додатки" width="370">
+                    <img  srcset="./images/mobile.jpg 1x, ./images/mobile-2x.jpg 2x " src="./images/mobile.jpg" alt="Мобільні додатки" width="370">
                     <div class="work-list__wrap">
                         <h3 class="work-list__text">Мобільні додатки</h3>
                     </div>
                 </li>
                 <li class="work-list__iteam">
-                    <img src="./images/design.jpg" alt="Дизайнерські рішення" width="370">
+                    <img srcset="./images/design.jpg 1x, ./images/design-2x.jpg 2x" src="./images/design.jpg" alt="Дизайнерські рішення" width="370">
                     <div class="work-list__wrap">
                     <h3 class="work-list__text">Дизайнерські рішення</h3>
                     </div>
@@ -179,7 +179,12 @@
             <h2 class="section-title">Наша команда</h2>
             <ul class="team-list list">
                 <li class="team-list__iteam">
-                    <img src="./images/igor.jpg" alt="Ігор Дем'яненко" width="270">
+                    <picture>
+                        <source srcset="./images/igor.jpg 1x, ./images/igor-2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/hero-bg-tab-1x.jpg 1x, ./images/hero-bg-tab-2x.jpg 2x" media="(min-width: 768px)" >
+                        <source srcset="./images/igor-mob-1x.jpg 1x, ./images/igor-mob-2x.jpg 2x" media="(max-width: 767px)">
+                        <img  src="./images/igor-mob-1x.jpg" alt="Ігор Дем'яненко" width="450">
+                    </picture>
                     <p class="team-list__name">Ігор Дем'яненко</p>
                     <p lang="en" class="team-list__prof">Product Designer</p>
                     <ul class="list team-social">
@@ -214,7 +219,12 @@
                     </ul>
                 </li>
                 <li class="team-list__iteam">
-                    <img src="./images/olga.jpg" alt="Ольга Рєпіна" width="270">
+                    <picture>
+                        <source srcset="./images/olga.jpg 1x, ./images/olga-2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/olga-tab-1x.jpg 1x, ./images/olga-tab-2x.jpg 2x" media="(min-width: 768px)" >
+                        <source srcset="./images/olga-mob-1x.jpg 1x, ./images/olga-mob-2x.jpg 2x" media="(max-width: 767px)" >
+                        <img src="./images/olga-mob-1x.jpg" alt="Ольга Рєпіна" width="450">
+                    </picture>
                     <p class="team-list__name">Ольга Рєпіна</p>
                     <p lang="en" class="team-list__prof">Frontend Developer</p>
                     <ul class="list list team-social">
@@ -249,7 +259,12 @@
                     </ul>
                 </li>
                 <li class="team-list__iteam">
-                    <img src="./images/mykola.jpg" alt="Микола Тарасов" width="270">
+                    <picture>
+                        <source srcset="./images/mykola.jpg 1x, ./images/mykola-2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/mykola-tab-1x.jpg 1x, ./images/mykola-tab-2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/mykola-mob-1x.jpg 1x, ./images/mykola-mob-2x.jpg 2x" media="(max-width: 767px)">
+                        <img  src="./images/mykola-mob-1x.jpg" alt="Микола Тарасов" width="450">
+                    </picture>
                     <p class="team-list__name">Микола Тарасов</p>
                     <p lang="en" class="team-list__prof">Marketing</p>
                     <ul class="list list team-social">
@@ -284,7 +299,12 @@
                     </ul>
                 </li>
                 <li class="team-list__iteam">
-                    <img src="./images/mikhailo.jpg" alt="Михайло Єрмаков" width="270">
+                    <picture>
+                        <source srcset="./images/mikhailo.jpg 1x, ./images/mikhailo-2x.jpg 2x"  media="(min-width: 1200px)">
+                        <source srcset="./images/mikhailo-tab-1x.jpg 1x, ./images/mikhailo-tab-2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/mikhailo-mob-1x.jpg 1x, ./images/mikhailo-mob-2x.jpg 2x" media="(max-width: 767px)">
+                        <img src="./images/mikhailo-mob-1x.jpg" alt="Михайло Єрмаков" width="450">
+                    </picture>
                     <p class="team-list__name">Михайло Єрмаков</p>
                     <p lang="en" class="team-list__prof">UI Designer</p>
                     <ul class="list list team-social">
