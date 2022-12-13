@@ -201,11 +201,11 @@
 }
 
 .policy-text span {
-    width: 16px;
-    height: 15px;
+    width: 11px;
+    height: 10px;
     border: 2px solid var(--primary-black-color);
     border-radius: 2px;
-    margin-right: 7px;
+    margin-right: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -219,6 +219,11 @@
     .input-policy:focus + & {
         border-color: var(--accent-color);
     
+    }
+    @media screen and (min-width:480px) {
+        width: 16px;
+        height: 15px;
+        margin-right: 7px;
     }
 }
 
