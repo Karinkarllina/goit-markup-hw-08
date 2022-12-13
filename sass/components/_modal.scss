@@ -8,8 +8,8 @@
 }
 
 .modal {
-    width: 450px;
-    min-height: 609px;
+    width: 300px;
+    min-height: 459px;
     background-color: var(--primary-white-color);
     border-radius: 4px;
     position: absolute;
@@ -21,7 +21,11 @@
     padding: 40px;
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) skew(-10deg) rotate(-180deg);
-    }       
+    }     
+    @media screen and (min-width:480px) {
+        width: 450px;
+        min-height: 609px;
+    }
     @media screen and (min-width:1200px) {
         width: 528px;
         min-height: 581px;
@@ -55,12 +59,15 @@
 
 .modal-title {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-black-color);
     margin-bottom: 12px;
+    @media screen and (min-width:480px) {
+    font-size: 20px;
+    }
     @media screen and (min-width:1200px) {
         line-height: 1.15;
     }
@@ -120,9 +127,12 @@
 }
 
 .label-input {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
+    @media screen and (min-width:480px) {
+        font-size: 14px;
+    }
     @media screen and (min-width:1200px) {
         font-size: 12px;
         line-height: 1.17;
@@ -161,11 +171,14 @@
 }
 
 .policy-text {
-    font-size: 12px;
+    font-size: 7px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     display: flex;
     align-items: center;
+    @media screen and (min-width:480px) {
+        font-size: 12px;
+    }
     @media screen and (min-width:1200px) {
         font-size: 14px;
         line-height: 1.71;
@@ -173,11 +186,14 @@
 }
 
 .doc-text {
-    font-size: 12px;
+    font-size: 7px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--accent-color);
     padding-left: 3px;
+    @media screen and (min-width:480px) {
+        font-size: 12px;
+    }
     @media screen and (min-width:1200px) {
         font-size: 14px;
         line-height: 1.71;

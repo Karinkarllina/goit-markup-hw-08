@@ -511,8 +511,8 @@ body {
 }
 
 .modal {
-  width: 450px;
-  min-height: 609px;
+  width: 300px;
+  min-height: 459px;
   background-color: var(--primary-white-color);
   border-radius: 4px;
   position: absolute;
@@ -525,6 +525,12 @@ body {
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) skew(-10deg) rotate(-180deg);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -560,12 +566,17 @@ body {
 
 .modal-title {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-black-color);
   margin-bottom: 12px;
+}
+@media screen and (min-width: 480px) {
+  .modal-title {
+    font-size: 20px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal-title {
@@ -625,9 +636,14 @@ body {
 }
 
 .label-input {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+}
+@media screen and (min-width: 480px) {
+  .label-input {
+    font-size: 14px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .label-input {
@@ -679,11 +695,16 @@ body {
 }
 
 .policy-text {
-  font-size: 12px;
+  font-size: 7px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   display: flex;
   align-items: center;
+}
+@media screen and (min-width: 480px) {
+  .policy-text {
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .policy-text {
@@ -693,11 +714,16 @@ body {
 }
 
 .doc-text {
-  font-size: 12px;
+  font-size: 7px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--accent-color);
   padding-left: 3px;
+}
+@media screen and (min-width: 480px) {
+  .doc-text {
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .doc-text {
@@ -782,23 +808,41 @@ body {
   display: block;
   margin-left: auto;
   cursor: pointer;
+  transition: var(--tra);
 }
 .menu-close:hover {
   fill: var(--accent-color);
 }
 
 .menu-navigation {
-  margin-left: 40px;
+  margin-left: 10px;
+}
+@media screen and (min-width: 480px) {
+  .menu-navigation {
+    margin-left: 40px;
+  }
 }
 
 .menu-navigation__link {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--primary-black-color);
   text-decoration: none;
+  transition: var(--tra);
+}
+.menu-navigation__link:hover, .menu-navigation__link:focus {
+  color: var(--accent-color);
+}
+.menu-navigation__link.current {
+  color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .menu-navigation__link {
+    font-size: 40px;
+  }
 }
 
 .menu-navigation__iteam:not(:last-child) {
@@ -810,7 +854,12 @@ body {
 }
 
 .menu-contact {
-  margin-left: 40px;
+  margin-left: 10px;
+}
+@media screen and (min-width: 480px) {
+  .menu-contact {
+    margin-left: 40px;
+  }
 }
 
 .menu-contact__iteam:not(:last-child) {
@@ -821,13 +870,18 @@ body {
   margin-bottom: 64px;
 }
 
-.menu-contact__link--menu {
+.menu-contact__link--tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 27px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--accent-color);
   text-decoration: none;
+}
+@media screen and (min-width: 480px) {
+  .menu-contact__link--tel {
+    font-size: 34px;
+  }
 }
 
 .menu-contact__link {
@@ -844,12 +898,26 @@ body {
   flex-direction: row;
   gap: 10px;
   margin-bottom: 48px;
-  margin-left: 40px;
+  margin-left: 10px;
+}
+@media screen and (min-width: 480px) {
+  .menu-social {
+    margin-left: 40px;
+  }
 }
 
 .menu-social__link {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .menu-social__link {
+    font-size: 18px;
+  }
 }
 
 .menu-social__link::after {
@@ -876,7 +944,7 @@ body {
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/hero-bg-mob-1x.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob-1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
