@@ -1,9 +1,12 @@
 .work {
-    padding-bottom: 94px;
     display: none;
     @media screen and (min-width:1200px) {
-        display: contents;
+        display: contents;    
     }
+}
+
+.work__container {
+padding-bottom: 94px;
 }
 
 .work-list {
