@@ -74,7 +74,10 @@
             height: 4px;
             background-color: var(--accent-color);
             border-radius: 2px;
+            bottom: -2px;
+            @media screen and (min-width:1200px) {
             bottom: -1px;
+        }
         }
     
         &.current {
